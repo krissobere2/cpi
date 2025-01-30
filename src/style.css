@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+
+.section1:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/banners/bg-gradient.png) repeat-x;
+    top: 40%;
+    left: 0;
+    z-index: 5;
+
+}
+
+.bg-light-blue {
+    background-color: #adedea;
+}
+.text-color-light-blue {
+    color: #adedea;
+}
+.bg-dark-blue {
+    background-color: #0034ae;
+}
+
+.text-color-dark-blue {
+    color: #0034ae;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.section1 .inside-image-text {
+    width: 47%;
+    top: 32%;
+    left: 53%;
+    transform: translate(-50%, -46%);
+}
+.slider {
+    width: auto;
+    margin: 30px 50px 50px;
+}
+
+.slick span {
+    display: block;
+    background: #3498db;
+    color: #fff;
+    font-size: 36px;
+    height: 250px;
+    line-height: 100px;
+    position: relative;
+    text-align: center;
+    
+    transform: translate(0, 0) scale(.4);
+    transition: all .4s ease;
+    opacity: .5;
+  }
+  
+  .list:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    bottom: 0;
+    left: 4.8%;
+    border-radius: 50px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(#adedea, #8aaaf5);
+}
+.small-quote {
+    width: 40px;
+}
+
+
+/* bootstrap */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem!important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-clip: padding-box;
+    border-radius: 30px;
+}
+input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    transition: all .3s;
+}
+
+.custom-form input, .custom-form input:focus, .custom-form select {
+    padding: 18px!important;
+    border-radius: 30px!important;
+    background-color: #b4c1db;
+    border-color: #7c7c7a;
+    box-shadow: unset;
+    font-size: 16px;
+}
+    .list > li:before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -5.1%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #adedea;
+}
+
+.list > li {
+    padding: 10px 0 25px 10px;
+}
+
+
+
+  .circle-1 {
+    width: 330px;
+    height: 330px;
+    top: -23%;
+    right: 28%;
+  }
+
+  .circle-2 {
+    width: 231px;
+    height: 231px;
+    top: -13%;
+    right: 0;
+}
+  .circle-3 {
+    width: 350px;
+    height: 350px;
+    top: 16%;
+    right: 60%;
+}
+
+.circle-4 {
+    width: 200px;
+    height: 200px;
+    top: 46%;
+    right: 36%;
+}
+
+.circle-5 {
+    width: 300px;
+    height: 300px;
+    top: 36%;
+    right: 0;
+}
+
+  
+  .slick-slide.lt2 span {
+    transform: translate(10%, 0) scale(.6);
+  }
+  .slick-slide.lt1 span {
+    opacity: .7;
+    transform: translate(5%, 0) scale(.8);
+  }
+  .slick-slide.gt1 span {
+    opacity: .7;
+    transform: translate(-5%, 0) scale(.8);
+  }
+  .slick-slide.gt2 span {
+    transform: translate(-10%, 0) scale(.6);
+  }
+  .slick-slide.slick-center span {
+    z-index: 1;
+    transform: scale(1);
+    opacity: 1;
+    color: #e67e22;
+  }
+  
+  .slick-prev,
+  .slick-next{
+    position: absolute;
+    top: 50%;
+    appearance: none;
+    margin-top: -10px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    z-index: 100;
+  }
+  
+  .slick-prev {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #007bff transparent transparent;
+    left: 0;
+  }
+  .slick-next {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent #007bff;
+    right: 0;
+  }
+  
+
+@media (min-width: 1200px) {
+    .h1, h1 {
+        font-size: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .section1 .inside-image-text {
+    width: 68%;
+    top: 32%;
+    left: 53%;
+    transform: translate(-50%, -46%);
+  }
+  .slick-carousel2{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+    .event-agenda .list li:before {
+        left: -55px;
+    }
+}
